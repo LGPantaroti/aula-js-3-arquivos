@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Primeiro</title>
+    <link rel="stylesheet" href="css.css" />
+    <script src="java.js"></script>
+    <noscript>Este site só funciona com javascript</noscript>
+  </head>
+
+  <body>
+    <section id="formulario">
+      <button onclick="alert('Opa, TURO BÃO?')">Me Clique!</button>
+      <form>
+        <div class="input-content">
+          <label>Informe seu peso</label>
+          <input type:="text" name="peso" id="ps"><br />
+        </div>
+
+        <div class="input-content">
+          <label>Informe sua altura</label>
+          <input type="text" name="altura" id="al" />
+          <span>Em centimetros</span>
+        </div>
+
+        <button
+          onclick="calcImc(
+            document.getElementById('ps'),
+            document.getElementById('al')
+            )"
+        >
+          Calcule o IMC
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
